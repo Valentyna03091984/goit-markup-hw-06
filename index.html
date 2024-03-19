@@ -112,12 +112,14 @@
                 <h2 class="section-title team-portfolio-title">Our Team</h2>
                 <ul class="page-team-list">
                     <li class="team-list-item">
-                        <img src="./images/mark.jpg" 
+                        <img 
+                        srcset="./images/mark-img-2x.jpg"
+                        src="./images/mark-1x.jpg" 
                         alt="mark.jpg"
                         width="264" 
                         height="260">
                         <div class="conteiner-name">
-                            <h3 class="section-title-name">Mark Guerrero</h3>
+                            <h3 class="section-title-name our-team-name">Mark Guerrero</h3>
                             <p class="page-text team-name-text">Product Designer</p>
                             <ul class="social-links-list">
                                 <li class="social-links-list-item">
@@ -153,12 +155,14 @@
                       
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/tom.jpg" 
+                        <img 
+                        srcset="./images/tom-img-2x.jpg"
+                        src="./images/tom-1x.jpg" 
                         alt="tom.jpg" 
                         width="264" 
                         height="260">
                         <div class="conteiner-name">
-                            <h3 class="section-title-name">Tom Ford</h3>
+                            <h3 class="section-title-name our-team-name">Tom Ford</h3>
                             <p class="page-text team-name-text">Frontend Developer</p>
                             <ul class="social-links-list">
                                 <li class="social-links-list-item">
@@ -194,12 +198,14 @@
                        
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/camila.jpg" 
+                        <img 
+                        srcset="./images/camila-img-2x.jpg"
+                        src="./images/camila-1x.jpg" 
                         alt="camila.jpg" 
                         width="264" 
                         height="260">
                         <div class="conteiner-name">
-                            <h3 class="section-title-name">Camila Garcia</h3>
+                            <h3 class="section-title-name our-team-name">Camila Garcia</h3>
                             <p class="page-text team-name-text">Marketing</p>
                             <ul class="social-links-list">
                                 <li class="social-links-list-item">
@@ -235,12 +241,14 @@
                         
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/daniel.jpg" 
+                        <img 
+                        srcset="./images/daniel-img-2x.jpg"
+                        src="./images/daniel-1x.jpg" 
                         alt="daniel.jpg" 
                         width="264" 
                         height="260">
                         <div class="conteiner-name">
-                            <h3 class="section-title-name">Daniel Wilson</h3>
+                            <h3 class="section-title-name our-team-name">Daniel Wilson</h3>
                             <p class="page-text team-name-text">UI Designer</p>
                             <ul class="social-links-list">
                                 <li class="social-links-list-item">
@@ -280,19 +288,43 @@
             
         </section>
         <!--Section 3-->
-        <!-- <section class="page-portfolio">
+        <section class="page-portfolio">
             <div class="container">
                 <h2 class="section-title team-portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-list-item">
                         <div class="portfolio-img-overlay-wrapper"> 
-                            <img width="360" src="./images/banking.jpg" 
-                            alt="banking.jpg" >
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/banking-desc-1x.jpg 1x,
+                                ./images/banking-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1157px)"
+                                />
+                                
+                                <source
+                                srcset="
+                                ./images/banking-tab-1x.jpg 1x,
+                                ./images/banking-tab@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/banking-mob-1x-img.jpg 1x,
+                                ./images/banking-mob-img@2x.jpg 2x
+                                "
+                                media="(max-width: 768px)"
+                                />
+                                <img width="360" src="./images/banking-desc-1x.jpg" 
+                                alt="banking-desc-1x.jpg" >
+                              </picture>
                         <p class="portfolio-overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App 
                         </p>
                         <div class="conteiner-portfolio">
                             <h3 class="section-title-name name-portfolio">Banking App</h3>
-                            <p class="page-text name-portfolio">App</p>
+                            <p class="page-text name-portfolio-text">App</p>
                         </div>
                         </div>
                        
@@ -300,13 +332,38 @@
                 </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img-overlay-wrapper">
-                             <img width="360" src="./images/payment.jpg" 
-                            alt="payment.jpg" >
+                            <picture>
+                              <source 
+                              srcset="
+                              ./images/payment-desc-1x.jpg 1x,
+                              ./images/payment-desc-2x.jpg 2x
+                              "
+                              media="(min-width: 1157px)"
+                              />
+                              
+                              <source
+                              srcset="
+                              ./images/payment-tab-1x.jpg 1x,
+                              ./images/payment-tab-img@2x.jpg 2x
+                              "
+                              media="(min-width: 768px)"
+                              />
+                              <source
+                              srcset="
+                              ./images/payment-mob-1x-img.jpg 1x,
+                              ./images/payment-mob-img@2x.jpg 2x
+                              "
+                              media="(max-width: 768px)"
+                              />
+                                <img width="360" src="./images/payment-mob-1x-img.jpg" 
+                                alt="payment-mob-1x-img.jpg" >
+                            </picture>
+                            
                             <p class="portfolio-overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App 
                             </p>
                             <div class="conteiner-portfolio">
                                 <h3 class="section-title-name name-portfolio">Cashless Payment</h3>
-                                <p class="page-text name-portfolio">Marketing</p>
+                                <p class="page-text name-portfolio-text">Marketing</p>
                             </div>
                         </div>
                        
@@ -315,13 +372,38 @@
                 </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img-overlay-wrapper">
-                            <img width="360" src="./images/mediation.jpg" 
-                            alt="mediation.jpg" >
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/mediation-desc-1x.jpg 1x,
+                                ./images/meditation-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1157px)"
+                                />
+                                
+                                <source
+                                srcset="
+                                ./images/mediation-tab-img.jpg 1x,
+                                ./images/mediation-tab-img@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/mediation-mob-1x-img.jpg 1x,
+                                ./images/mediation-mob-img@2x.jpg 2x
+                                "
+                                media="(max-width: 768px)"
+                                />
+                                <img width="360" src="./images/mediation-desc-1x.jpg" 
+                            alt="mediation-desc-1x.jpg" >
+                              </picture>
+                            
                             <p class="portfolio-overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App 
                             </p>
                             <div class="conteiner-portfolio">
                                 <h3 class="section-title-name name-portfolio">Meditation App</h3>
-                                <p class="page-text name-portfolio">App</p>  
+                                <p class="page-text name-portfolio-text">App</p>  
                             </div>
                         </div>
                         
@@ -330,13 +412,39 @@
                 </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img-overlay-wrapper">
-                            <img width="360" src="./images/taxi.jpg" 
-                        alt="taxi.jpg" >
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/taxi-desc-1x.jpg 1x,
+                                ./images/taxi-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1157px)"
+                                />
+                                
+                                <source
+                                srcset="
+                                ./images/taxi-tab-1x-img.jpg 1x,
+                                ./images/taxi-tab-img@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/taxi-mob-1x-img.jpg 1x,
+                                ./images/taxi-mob-img@2x.jpg 2x
+                                "
+                                media="(max-width: 768px)"
+                                />
+                                <img width="360" src="./images/taxi-desc-1x.jpg" 
+                        alt="taxi-desc-1x.jpg" >
+                              </picture>
+
+                            
                         <p class="portfolio-overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App 
                         </p>
                         <div class="conteiner-portfolio">
                             <h3 class="section-title-name name-portfolio ">Taxi Service</h3>
-                            <p class="page-text name-portfolio">Marketing</p>
+                            <p class="page-text name-portfolio-text">Marketing</p>
                         </div>
                         </div>
                         
@@ -345,13 +453,39 @@
                 </li> 
                     <li class="portfolio-list-item">
                         <div class="portfolio-img-overlay-wrapper">
-                        <img width="360" src="./images/screen.jpg" 
-                        alt="screen.jpg" >
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/screen-desc-1x.jpg 1x,
+                                ./images/screen-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1157px)"
+                                />
+                                
+                                <source
+                                srcset="
+                                ./images/screen-tab-1x-img.jpg 1x,
+                                ./images/screen-tab-img@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/screen-mob-1x-img.jpg 1x,
+                                ./images/screen-mob-img@2x.jpg 2x
+                                "
+                                media="(max-width: 768px)"
+                                />
+                                <img width="360" src="./images/screen-desc-1x.jpg" 
+                        alt="screen-desc-1x.jpg" >
+                              </picture>
+
+                        
                         <p class="portfolio-overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App 
                         </p>
                         <div class="conteiner-portfolio">
                             <h3 class="section-title-name name-portfolio">Screen Illustrations</h3>
-                            <p class="page-text name-portfolio">Design</p>
+                            <p class="page-text name-portfolio-text">Design</p>
                         </div>
                     </div>
                         
@@ -360,13 +494,38 @@
                 </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-img-overlay-wrapper">
-                            <img width="360" src="./images/courses.jpg" 
-                        alt="courses.jpg" >
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/courses-desc-1x.jpg 1x,
+                                ./images/courses-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1157px)"
+                                />
+                                
+                                <source
+                                srcset="
+                                ./images/courses-tab-1x-img.jpg 1x,
+                                ./images/courses-tab-img@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/courses-mob-1x-img.jpg 1x,
+                                ./images/courses-mob-img@2x.jpg 2x
+                                "
+                                media="(max-width: 768px)"
+                                />
+                                <img width="360" src="./images/courses-desc-1x.jpg" 
+                        alt="courses-desc-1x.jpg" >
+                              </picture>
+
                         <p class="portfolio-overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App 
                         </p>
                         <div class="conteiner-portfolio">
                             <h3 class="section-title-name name-portfolio">Online Courses</h3>
-                            <p class="page-text name-portfolio">Marketing</p>
+                            <p class="page-text name-portfolio-text">Marketing</p>
                         </div>
                         </div>
                         
@@ -376,10 +535,10 @@
                 </ul>
             </div>
             
-        </section> -->
+        </section>
         </main>
     <!--Footer-->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
         <div class="container footer-body-logo">
             <div class="footer-body">
                 <a class="logo-footer" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
@@ -427,16 +586,16 @@
                     </label>
                 <button class="input-btn" type="submit">Subscribe
                     <svg class="icon_frame" width="24" height="24" >
-                        <use href="./images/symbol-defs.svg#icon-vector"></use>
+                        <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                     </svg>
                 </button>
                 </form>
             </div>
 </div>
 
-</footer> -->
+</footer>
 
-<!-- <div class="backdrop is-open">
+<div class="backdrop">
     <div class="modal">
       <button class="modal-close-btn" type="button">
         <svg class="modal-close-btn-icon" width="8" height="8" aria-label="close-icon">
@@ -533,7 +692,10 @@
         <button class="review-form-submit-btn" type="submit">Send</button>
       </form>
     </div>
-</div> -->
+</div>
+
+
+
 <div class="mobile-menu is-open">
     <div class="conteiner mobile-menu-conteiner">
       <button class="mobile-menu-close-btn">
